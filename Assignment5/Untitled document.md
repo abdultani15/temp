@@ -70,5 +70,5 @@ and time alert. If this option is selected allow option to repeat the behavior.
      of the user.
 
 13\. The User Interface (UI) must be intuitive and responsive.
--   For this, it is to be added later as this is just for the
-     UML diagram.
+-   This can be done at a later stage. It can be added later as this is just
+-    for the UML diagram.
