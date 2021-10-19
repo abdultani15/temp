@@ -1,46 +1,24 @@
-1\. A list consisting of reminders the users want to be aware of. The
-application must allow
-
-users to add reminders to a list, delete reminders from a list, and edit
-the reminders in
-
+1\. A list consisting of reminders the users want to be aware of. The application must allow
+users to add reminders to a list, delete reminders from a list, and edit the reminders in
 the list.
-
 -   For this I created a class called ReminderList that has a list of
      all the reminders and keeps track of their type and name. It has
      all the functions mentioned above.
 
-2\. The application must contain a database (DB) of reminders and
-corresponding data.
-
+2\. The application must contain a database (DB) of reminders and corresponding data.
 -   In the UML diagram I added a database for the reminders and data.
 
-3\. Users must be able to add reminders to a list by picking them from a
-hierarchical list,
-
-where the first level is the reminder type (e.g., Appointment), and the
-second level is the
-
+3\. Users must be able to add reminders to a list by picking them from a hierarchical list,
+where the first level is the reminder type (e.g., Appointment), and the second level is the
 name of the actual reminder (e.g., Dentist Appointment).
-
 -   For this, I made two classes. One for reminderTypes and one
      for reminder.
 
-4\. Users must also be able to specify a reminder by typing its name. In
-this case, the
-
-application must look in its DB for reminders with similar names and ask
-the user
-
-whether that is the item they intended to add. If a match (or nearby
-match) cannot be
-
-found, the application must ask the user to select a reminder type for
-the reminder, or
-
-add a new one, and then save the new reminder, together with its type,
-in the DB.
-
+4\. Users must also be able to specify a reminder by typing its name. In this case, the
+application must look in its DB for reminders with similar names and ask the user
+whether that is the item they intended to add. If a match (or nearby match) cannot be
+found, the application must ask the user to select a reminder type for the reminder, 
+or add a new one, and then save the new reminder, together with its type, in the DB.
 -   In the reminder class, I keep track of the reminder by its name
      and type. I added a match function which takes in the name of the
      reminder and searches the database for it. To get the name I call
