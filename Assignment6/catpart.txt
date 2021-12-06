@@ -1,0 +1,39 @@
+#Source
+ SourceOpenable:
+	   Can-Open.
+	   Cannot-Open.			[error] [property SourceCannotOpen]
+
+ NumberOfSources:
+	  None.				[error]
+	  One.				[property singleSource]
+	  Many.				[property manySources]
+ isSourceDirectory:
+	   isDirectory.				
+	   isNotDirectory.		[if !manySources]
+
+#Destination
+ DestinationOpenable:
+	   Can-Open.
+	   Cannot-Open.			[error] [property DestCannotOpen]
+ isDestinationDirectory:
+	   isDirectory.			
+	   isNotDirectory.		[if !manySources]	
+
+#Options
+ numOfOptions:
+	  none.				[single] [property noOptions]
+	  OneOrMore.
+ Option -b:
+	  Option-b-was-inputted.	[if !noOptions]	
+	  Option-b-was-not-inputted.	[if !noOptions]
+ Option -f:
+	  Option-f-was-inputted.	[if !noOptions]		
+	  Option-f-was-not-inputted.	[if !noOptions]
+ Option -r:
+	  Option-r-was-inputted.	[if !noOptions]
+	  Option-r-was-not-inputted.	[if !noOptions]
+ Option -v:
+	  Option-v-was-inputted.	[if !noOptions]
+	  Option-v-was-not-inputted.	[if !noOptions]				
+
+
